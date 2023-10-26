@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-sbmn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-xtan-tenant/quarkus/devfile-sample-code-with-quarkus-sbmn@sha256:236ca8b4feb02043236ee9a1a9e6836ce3116eae1dc503db9184faa2893f95a9
+        name: my-java-quarkus
+        resources: {}
+status: {}
